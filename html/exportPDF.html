@@ -107,6 +107,8 @@
         doc.setFont('NotoSansCJKtc');
         //pdf标题设置
         doc.text(20, 20, '导出标题');
+        // https://github.com/simonbengtsson/jsPDF-AutoTable 主要属性参考
+        //doc.autoTable(columns, data, {styles: {cellPadding: 0.5, fontSize: 8, font: "NotoSansCJKtc"}});
         doc.autoTable(columns, data, {});
 
         doc.save('导出.pdf');
